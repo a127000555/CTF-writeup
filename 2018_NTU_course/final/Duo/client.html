@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>多人混戰</title>
+    <style>
+      * { margin: 0; padding: 0; }
+      body { font: 24px Helvetica, Arial; }
+      #scores { float: right; padding-top: 16px; padding-right: 16px; }
+    </style>
+  </head>
+  <body>
+    <div id="scores">
+      <div id="own">
+        Nickname: <input type="text" id="nickname" value="admin">
+        <input type="button" id="auth" value="Play!">
+      </div>
+      <hr>
+      <div id="others"><span>123123 11: 0</span><br></div>
+    </div>
+    <script src="client_files/socket.js"></script>
+    <script src="client_files/jquery-1.js"></script>
+    <script>
+      GameCanvas = (function() {
+        
+        function GameCanvas(canvas) {
+          var ratio = window.innerWidth < window.innerHeight ?
+            window.innerWidth : window.innerHeight;
+
+          this.canvas = canvas;
+          this.canvas.width = this.canvas.height = ratio;
+          this.context = this.canvas.getContext('2d');
+          this.gridSize = 40;
+          this.cellSize = ratio / this.gridSize;
+        }
+
+        GameCanvas.prototype.draw = function(players, apples) {
+          var context = this.context;
+          var cellSize = this.cellSize;
+
+          // Render background
+          this.context.fillStyle = "#555";
+          this.context.fillRect(0, 0, this.canvas.width, this.canvas.height);
+
+          // Reset other
+          $('#others').text('');
+
+          // Render scores
+          players.forEach((p) => {
+
+            // scores
+            if(p.id === playerId) {
+              $('#own')
+                .text(p.nickname + ' score: ' + p.points)
+                .append($('<br>'));
+            } else {
+              $('#others')
+                .append($('<span>')
+                .text(p.nickname + ' ' + p.id + ': ' + p.points))
+                .append($('<br>'));
+            }
+
+            // players
+            if(p.id === playerId) {
+              context.fillStyle = "#66ff5c";
+            } else {
+              context.fillStyle = "#4286f4";
+            }
+            context.fillRect(p.x*cellSize, p.y*cellSize, cellSize, cellSize);
+
+            // tails
+            p.tail.forEach((t) => {
+              context.fillRect(t.x*cellSize, t.y*cellSize, cellSize, cellSize);
+            });
+          });
+
+          // Render apples
+          apples.forEach((a) => {
+            context.fillStyle = "#ff0000";
+            context.fillRect(a.x*cellSize, a.y*cellSize, cellSize, cellSize);
+          });
+        }
+
+        return GameCanvas;
+      })();
+
+      /*
+        Initialize Game
+      */
+
+      var socket = io();
+      var playerId;
+      var nickname;
+
+      // Authenticate
+      $('#auth').click(() => {
+        nickname = $('#nickname').val().trim();
+        if(nickname && nickname !== '') {
+          socket.emit('auth', { nickname }, (session) => {
+            playerId = session.id;
+            console.log('new session: ' + playerId);
+          });
+        }
+      });
+
+      // Create & insert canvas
+      var canvas = document.createElement("canvas");
+      document.body.appendChild(canvas);
+
+      // Create game with canvas
+      var game = new GameCanvas(canvas);
+
+      // Send keystrokes
+      document.onkeydown = (ev) => {
+        socket.emit('key', ev.keyCode);
+      }
+
+      // Receive state from server
+      socket.on('state', (stuff) => {
+        // and redraw the game
+        game.draw(stuff.players, stuff.apples);
+      });
+
+    </script><canvas height="980" width="980"></canvas>
+  
+
+
+<div id="my-extension-installed" style="visibility: hidden;"></div></body></html>

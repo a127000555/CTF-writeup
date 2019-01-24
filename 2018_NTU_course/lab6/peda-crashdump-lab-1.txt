@@ -1,0 +1,11 @@
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Dec  6 02:23:32 2018[0m
+[mReason: [;31mInteractive dump[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[m[;33mWarning: not running or target is remote[0m[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+None
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m

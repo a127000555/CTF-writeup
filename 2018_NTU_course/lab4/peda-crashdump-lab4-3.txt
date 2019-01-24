@@ -1,0 +1,63 @@
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Thu Nov 15 05:46:48 2018[0m
+[mReason: [;31mInteractive dump[0m[0m
+[mExploitability: Unknown[0m
+[;34m[----------------------------------registers-----------------------------------][0m
+[m[;32mRAX[0m: 0x0 
+[;32mRBX[0m: 0x0 
+[;32mRCX[0m: [;31m0x7ffff7b042c0[0m (<__write_nocancel+7>:	cmp    rax,0xfffffffffffff001)
+[;32mRDX[0m: [;34m0x7ffff7dd3780[0m --> 0x0 
+[;32mRSI[0m: [;34m0x7ffff7dd26a3[0m --> 0xdd3780000000000a 
+[;32mRDI[0m: 0x1 
+[;32mRBP[0m: 0x6e41412441414241 ('ABAA$AAn')
+[;32mRSP[0m: [;34m0x7fffffffdba8[0m ("AACAA-AA(AADAA;AA)AAEAAaAA0AAFAAbAA1AAGAAcAA2AAHAAdAA3AAIAAeAA4AAJAAfAA5AAKAAgAA6AALAAhAA7AAMAAiAA8AANAAjAA9AAOAAkAAPAAlAAQAAmAARAAoAASAApAATAAqAAUAArAAVAAtAAWAAuAAXAAvAAYAAwAAZAAxAAyAAzA%%A%sA%BA%$A%"...)
+[;32mRIP[0m: [;31m0x400600[0m (<main+73>:	ret)
+[;32mR8 [0m: [;34m0x7ffff7fce700[0m (0x00007ffff7fce700)
+[;32mR9 [0m: 0x25416625414a2541 ('A%JA%fA%')
+[;32mR10[0m: 0x194 
+[;32mR11[0m: 0x246 
+[;32mR12[0m: [;31m0x4004d0[0m (<_start>:	xor    ebp,ebp)
+[;32mR13[0m: [;34m0x7fffffffdc80[0m ("A%)A%EA%aA%0A%FA%bA%1A%GA%cA%2A%HA%dA%3A%IA%eA%4A%JA%fA%5A%KA%gA%6A%'")
+[;32mR14[0m: 0x0 
+[;32mR15[0m: 0x0[0m
+[m[;32mEFLAGS[0m: 0x10246 ([;32mcarry[0m [;1;31mPARITY[0m [;32madjust[0m [;1;31mZERO[0m [;32msign[0m [;32mtrap[0m [;1;31mINTERRUPT[0m [;32mdirection[0m [;32moverflow[0m)[0m
+[m[;34m[-------------------------------------code-------------------------------------][0m[0m
+[m   0x4005e4 <main+45>:[;2m	mov    eax,0x0[0m
+   0x4005e9 <main+50>:[;2;31m	call   0x4004b0 <gets@plt>[0m
+   0x4005ee <main+55>:[;2m	lea    rax,[rbp-0x8][0m
+   0x4005f2 <main+59>:[;2m	mov    rdi,rax[0m
+   0x4005f5 <main+62>:[;2;32m	call   0x4004a0 <puts@plt>[0m
+   0x4005fa <main+67>:[;2m	mov    eax,0x0[0m
+   0x4005ff <main+72>:[;2m	leave  [0m
+=> 0x400600 <main+73>:[;1;32m	ret    [0m
+   0x400601:[m	nop    WORD PTR cs:[rax+rax*1+0x0][0m
+   0x40060b:[m	nop    DWORD PTR [rax+rax*1+0x0][0m
+   0x400610 <__libc_csu_init>:[m	push   r15[0m
+   0x400612 <__libc_csu_init+2>:[m	push   r14[0m
+   0x400614 <__libc_csu_init+4>:[m	mov    r15,rdx[0m
+   0x400617 <__libc_csu_init+7>:[m	push   r13[0m
+   0x400619 <__libc_csu_init+9>:[m	push   r12[0m
+   0x40061b <__libc_csu_init+11>:[m	lea    r12,[rip+0x2007ee]        # 0x600e10[0m[0m
+[m[;34m[------------------------------------stack-------------------------------------][0m[0m
+[m0000| [;34m0x7fffffffdba8[0m ("AACAA-AA(AADAA;AA)AAEAAaAA0AAFAAbAA1AAGAAcAA2AAHAAdAA3AAIAAeAA4AAJAAfAA5AAKAAgAA6AALAAhAA7AAMAAiAA8AANAAjAA9AAOAAkAAPAAlAAQAAmAARAAoAASAApAATAAqAAUAArAAVAAtAAWAAuAAXAAvAAYAAwAAZAAxAAyAAzA%%A%sA%BA%$A%"...)[0m
+[m0008| [;34m0x7fffffffdbb0[0m ("(AADAA;AA)AAEAAaAA0AAFAAbAA1AAGAAcAA2AAHAAdAA3AAIAAeAA4AAJAAfAA5AAKAAgAA6AALAAhAA7AAMAAiAA8AANAAjAA9AAOAAkAAPAAlAAQAAmAARAAoAASAApAATAAqAAUAArAAVAAtAAWAAuAAXAAvAAYAAwAAZAAxAAyAAzA%%A%sA%BA%$A%nA%CA%-A"...)[0m
+[m0016| [;34m0x7fffffffdbb8[0m ("A)AAEAAaAA0AAFAAbAA1AAGAAcAA2AAHAAdAA3AAIAAeAA4AAJAAfAA5AAKAAgAA6AALAAhAA7AAMAAiAA8AANAAjAA9AAOAAkAAPAAlAAQAAmAARAAoAASAApAATAAqAAUAArAAVAAtAAWAAuAAXAAvAAYAAwAAZAAxAAyAAzA%%A%sA%BA%$A%nA%CA%-A%(A%DA%;"...)[0m
+[m0024| [;34m0x7fffffffdbc0[0m ("AA0AAFAAbAA1AAGAAcAA2AAHAAdAA3AAIAAeAA4AAJAAfAA5AAKAAgAA6AALAAhAA7AAMAAiAA8AANAAjAA9AAOAAkAAPAAlAAQAAmAARAAoAASAApAATAAqAAUAArAAVAAtAAWAAuAAXAAvAAYAAwAAZAAxAAyAAzA%%A%sA%BA%$A%nA%CA%-A%(A%DA%;A%)A%EA%"...)[0m
+[m0032| [;34m0x7fffffffdbc8[0m ("bAA1AAGAAcAA2AAHAAdAA3AAIAAeAA4AAJAAfAA5AAKAAgAA6AALAAhAA7AAMAAiAA8AANAAjAA9AAOAAkAAPAAlAAQAAmAARAAoAASAApAATAAqAAUAArAAVAAtAAWAAuAAXAAvAAYAAwAAZAAxAAyAAzA%%A%sA%BA%$A%nA%CA%-A%(A%DA%;A%)A%EA%aA%0A%FA"...)[0m
+[m0040| [;34m0x7fffffffdbd0[0m ("AcAA2AAHAAdAA3AAIAAeAA4AAJAAfAA5AAKAAgAA6AALAAhAA7AAMAAiAA8AANAAjAA9AAOAAkAAPAAlAAQAAmAARAAoAASAApAATAAqAAUAArAAVAAtAAWAAuAAXAAvAAYAAwAAZAAxAAyAAzA%%A%sA%BA%$A%nA%CA%-A%(A%DA%;A%)A%EA%aA%0A%FA%bA%1A%G"...)[0m
+[m0048| [;34m0x7fffffffdbd8[0m ("AAdAA3AAIAAeAA4AAJAAfAA5AAKAAgAA6AALAAhAA7AAMAAiAA8AANAAjAA9AAOAAkAAPAAlAAQAAmAARAAoAASAApAATAAqAAUAArAAVAAtAAWAAuAAXAAvAAYAAwAAZAAxAAyAAzA%%A%sA%BA%$A%nA%CA%-A%(A%DA%;A%)A%EA%aA%0A%FA%bA%1A%GA%cA%2A%"...)[0m
+[m0056| [;34m0x7fffffffdbe0[0m ("IAAeAA4AAJAAfAA5AAKAAgAA6AALAAhAA7AAMAAiAA8AANAAjAA9AAOAAkAAPAAlAAQAAmAARAAoAASAApAATAAqAAUAArAAVAAtAAWAAuAAXAAvAAYAAwAAZAAxAAyAAzA%%A%sA%BA%$A%nA%CA%-A%(A%DA%;A%)A%EA%aA%0A%FA%bA%1A%GA%cA%2A%HA%dA%3A"...)[0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x0000000000400600 in main ()
+#1  0x41412d4141434141 in ?? ()
+#2  0x413b414144414128 in ?? ()
+#3  0x6141414541412941 in ?? ()
+#4  0x4141464141304141 in ?? ()
+#5  0x4147414131414162 in ?? ()
+#6  0x4841413241416341 in ?? ()
+#7  0x4141334141644141 in ?? ()
+#8  0x4134414165414149 in ?? ()
+#9  0x3541416641414a41 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m

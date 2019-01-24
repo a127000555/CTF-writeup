@@ -1,0 +1,130 @@
+<!--...--> 	Specifies a comment 	
+<!DOCTYPE> 	Specifies the document type 	
+<a> 	Specifies an anchor 	
+<abbr> 	Specifies an abbreviation 	
+<acronym> 	Specifies an acronym 	
+<address> 	Specifies an address element 	
+<applet> 	Deprecated. Specifies an applet 	
+<area> 	Specifies an area inside an image map 	
+<article> 	Specifies an article 	HTML-5
+<aside> 	Specifies some content loosely related to the page content. If it is removed, the remaining content still makes sense 	HTML-5
+<audio> 	Specifies a sound content 	HTML-5
+<b> 	Specifies bold text 	
+<base> 	Specifies a base URL for all the links in a page 	
+<basefont> 	Deprecated. Specifies a base font 	
+<bdo> 	Specifies the direction of text display 	
+<bdi> 	Represents text that must be isolated from its surrounding for bidirectional text formatting. It allows embedding a span of text with a different, or unknown, directionality 	HTML-5
+<bgsound> 	Specifies background music 	
+<big> 	Specifies big text 	
+<blink> 	Specifies a text which blinks 	
+<blockquote> 	Specifies a long quotation 	
+<body> 	Specifies the body element 	
+<br> 	Inserts a single line break 	
+<button> 	Specifies a push button 	
+<canvas> 	For making graphics with a script 	HTML-5
+<caption> 	Specifies a table caption 	
+<center> 	Deprecated. Specifies centered text 	
+<cite> 	Specifies a citation 	
+<code> 	Specifies computer code text 	
+<col> 	Specifies attributes for table columns 	
+<colgroup> 	Specifies groups of table columns 	
+<comment> 	Puts a comment in the document 	
+<datalist> 	A list of options for input values 	HTML-5
+<dd> 	Specifies a definition description 	
+<del> 	Specifies deleted text 	
+<dfn> 	Specifiesa definition term 	
+<dialog> 	Specifiesa dialog box or window 	HTML-5
+<dir> 	Deprecated. Specifies a directory list 	
+<div> 	Specifies a section in a document 	
+<dl> 	Specifies a definition list 	
+<dt> 	Specifies a definition term 	
+<em> 	Specifies emphasized text 	
+<embed> 	Specifiesa container for an external (non-HTML) application 	HTML-5
+<fieldset> 	Specifies a fieldset 	
+<figcaption> 	Specifiesa caption for a <figure> element 	HTML-5
+<figure> 	Specifies self-contained content 	HTML-5
+<font> 	Deprecated. Specifies text font, size, and color 	
+<footer> 	Specifies a footer for a document or section 	HTML-5
+<form> 	Specifies a form 	
+<frame> 	Specifies a sub window (a frame) 	
+<frameset> 	Specifies a set of frames 	
+<h1> to <h6> 	Specifies header 1 to header 6 	
+<head> 	Specifies information about the document 	
+<header> 	Specifies a header for a document or section 	HTML-5
+<hr> 	Specifies a horizontal rule 	
+<html> 	Specifies an html document 	
+<i> 	Specifies italic text 	
+<iframe> 	Specifies an inline sub window (frame) 	
+<ilayer> 	Specifies an inline layer 	
+<img> 	Specifies an image 	
+<input> 	Specifies an input field 	
+<ins> 	Specifies inserted text 	
+<isindex> 	Deprecated. Specifies a single-line input field 	
+<kbd> 	Specifies keyboard text 	
+<keygen> 	Generate key information in a form 	HTML-5
+<label> 	Specifies a label for a form control 	
+<layer> 	Specifies a layer 	
+<legend> 	Specifies a title in a fieldset 	
+<li> 	Specifies a list item 	
+<link> 	Specifies a resource reference 	
+<main> 	
+<map> 	Specifies an image map 	
+<mark> 	Specifies a text highlighted for reference purposes, that is for its relevance in another context 	HTML-5
+<marquee> 	Creates a scrolling-text marquee 	
+<menu> 	Deprecated. Specifies a menu list 	
+<menuitem> 	Specifies a command/menu item that the user can invoke from a popup menu 	HTML-5
+<meta> 	Specifies meta data of an html document which is not displayed on the page 	
+<meter> 	Specifies a scalar measurement within a known range (a gauge) 	
+<multicol> 	Specifies a multicolumn text flow 	
+<nav> 	Specifies a section that contains only navigation links 	HTML-5
+<nobr> 	No breaks allowed in the enclosed text 	
+<noembed> 	Specifies content to be presented by browsers that do not support the <embed>tag 	
+<noframes> 	Specifies a noframe section 	
+<noscript> 	Specifies a noscript section 	
+<object> 	Specifies an embedded object 	
+<ol> 	Specifies an ordered list 	
+<optgroup> 	Specifies an option group 	
+<option> 	Specifies an option in a drop-down list 	
+<output> 	Specifies the result of a calculation 	HTML-5
+<p> 	Specifies a paragraph 	
+<param> 	Specifies a parameter for an object 	
+<plaintext> 	Deprecated. Render the remainder of the document as preformatted plain text 	
+<pre> 	Specifies preformatted text 	
+<progress> 	Specifies a completion progress of a task 	HTML-5
+<q> 	Specifies a short quotation 	
+<rp> 	Specifies to show browsers that do not support the ruby element 	HTML-5
+<rt> 	Specifies an text ruby annotation 	HTML-5
+<ruby> 	Specifies an ruby annotation 	HTML-5
+<s> 	Deprecated. Specifies strikethrough text 	
+<samp> 	Specifies sample computer code 	
+<script> 	Specifies a script 	
+<section> 	Specifies a section in a document 	HTML-5
+<select> 	Specifies a selectable list 	
+<spacer> 	Specifies a white space 	
+<small> 	Specifies small text 	
+<source> 	Specifies a media resources for media elements, defined inside video or audio elements 	HTML-5
+<span> 	Specifies a section in a document 	
+<strike> 	Deprecated. Specifies strikethrough text 	
+<strong> 	Specifies strong text 	
+<style> 	Specifies a style definition 	
+<sub> 	Specifies subscripted text 	
+<summary> 	Specifies a summary, caption, or legend for a given <details> 	HTML-5
+<sup> 	Specifies superscripted text 	
+<table> 	Specifies a table 	
+<tbody> 	Specifies a table body 	
+<td> 	Specifies a table cell 	
+<textarea> 	Specifies a text area 	
+<tfoot> 	Specifies a table footer 	
+<th> 	Specifies a table heading 	
+<thead> 	Specifies a table header 	
+<time> 	Specifies a date and time <details> 	HTML-5
+<title> 	Specifies the document title 	
+<tr> 	Specifies a table row 	
+<track> 	Specifies a text tracks used in mediaplayers 	HTML-5
+<tt> 	Specifies teletype text 	
+<u> 	Deprecated. Specifies underlined text 	
+<ul> 	Specifies an unordered list 	
+<var> 	Specifies a variable 	
+<video> 	Specifies a text tracks used in media players 	HTML-5
+<wbr> 	Indicates a potential word break point within a <nobr> section 	
+<xmp> 	Deprecated. Specifies preformatted text 	
